@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useAuth } from "./AuthContext";
-import { usePage } from "../layout/PageContext";
 
 /** A form that allows users to log into an existing account. */
 export default function Login() {
   const { login } = useAuth();
-  const { setPage } = usePage();
+  
 
   const [error, setError] = useState(null);
 
