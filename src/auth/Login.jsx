@@ -39,7 +39,7 @@ export default function Login() {
         <button>Login</button>
         {error && <p role="alert">{error}</p>}
       </form>
-      <Link to='register'>Need an account? Register here.</Link>
+      <Link to='/register'>Need an account? Register here.</Link>
     </>
   );
 }

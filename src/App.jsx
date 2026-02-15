@@ -15,9 +15,9 @@ export default function App() {
     <Routes>
       <Route path='/' element={<Layout/>}>
         <Route index element={<ActivitiesPage/>}/>
-        <Route path='activites' element={<ActivitiesPage/>}/>
-        <Route path='login' element={<Login/>}/>
-        <Route path='register' element={<Register/>}/>
+        <Route path='/activites' element={<ActivitiesPage/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
       </Route>
     </Routes>
 

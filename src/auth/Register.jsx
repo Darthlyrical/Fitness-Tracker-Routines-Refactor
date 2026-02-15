@@ -18,7 +18,7 @@ export default function Register() {
     const password = formData.get("password");
     try {
       await register({ username, password });
-      navigate("activities");
+      navigate("/activities");
     } catch (e) {
       setError(e.message);
     }
@@ -39,7 +39,7 @@ export default function Register() {
         <button>Register</button>
         {error && <p role="alert">{error}</p>}
       </form>
-      <Link to='login'>
+      <Link to='/login'>
         Already have an account? Log in here.
       </Link>
     </>
