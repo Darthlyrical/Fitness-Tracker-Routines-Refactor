@@ -5,6 +5,8 @@ import Layout from "./layout/Layout"
 import Login from "./auth/Login"
 import Register from "./auth/Register"
 import ActivityDetails from "./activities/ActivityDetails"
+import RoutinesPage from "./routines/RoutinesPage";
+import RoutineDetails from "./routines/RoutineDetails";
 
 /**
  * Fitness Trackr is a platform where fitness enthusiasts can share their workouts and
@@ -18,6 +20,8 @@ export default function App() {
         <Route index element={<ActivitiesPage/>}/>
         <Route path='/activities' element={<ActivitiesPage/>}/>
         <Route path='/activities/:id' element={<ActivityDetails/>}/>
+        <Route path='/routines' element={<RoutinesPage />} />
+        <Route path='/routines/:id' element={<RoutineDetails />} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
       </Route>
